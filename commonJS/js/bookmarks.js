@@ -7,7 +7,7 @@
   
   "use strict";
   $(function(){
-    bookmark
+    bookmark();
   })
 
   var bookMark = function() {

@@ -16,6 +16,7 @@
       $(this).find("img").attr("src", normalImg);
     });
   }
+
   hoverImgOf = function(filename){
    var re = new RegExp("(.+)_off\\.(gif|png|jpg)", "g");
    return filename.replace(re, "$1_on.$2");
