@@ -1,0 +1,32 @@
+#main #main_wrap .topics ul {
+  width:510px;
+  float:left;
+  padding-right:10px;
+}
+#main #main_wrap .topics:after {
+  content: "."; display: block; visibility: hidden; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}
+
+#main #main_wrap .topics ul.marquee {
+  display: block;
+  margin:0; padding:0;
+  list-style: none;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+  /* optional */
+  width: 510px;
+  height: 28px;
+  z-index:20;
+}
+#main #main_wrap .topics ul.marquee li {
+  margin:0;
+  list-style:none;
+  position: absolute;
+  top: -999em; left: 0;
+  display: block;
+  white-space: nowrap;
+  padding: 7px;
+  z-index:30;
+  color:#ff1806;
+}

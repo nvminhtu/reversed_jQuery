@@ -1,0 +1,49 @@
+#main_visual {
+    width:1000px;
+  }
+  #main_area {
+    width:1000px;
+    height:260px;
+  }
+  #main_area ul {
+    width: 100%;
+    position: relative;
+  }
+  #main_area ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  #main_area ul li.current {
+    /*display: block;*/
+  }
+  #thumb_area {
+    width:1000px;
+    margin-bottom: 21px;
+    padding-top: 25px;
+    position: relative;
+  }
+  #thumb_area ul {
+    width: 100%;
+  }
+  #thumb_area ul:after{
+    content: "."; display: block; visibility: hidden; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+  }
+  #thumb_area ul li {
+    width: 242px;
+    margin-left: 10px;
+    float: left;
+    cursor: pointer;
+  }
+  #thumb_area ul li:first-child {
+    margin-left: 0;   
+  }
+  #thumb_frame {
+    width: 242px;
+    height: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(/img/shop/A106/img/index/bg-on_frame.gif) no-repeat 0 100%;
+  }

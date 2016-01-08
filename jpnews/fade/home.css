@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/*
+======== table of content. ===============
+
+summary:Toppage
+
+==========================================
+*/
+
+/*----------------------------------------
+teaser
+------------------------------------------*/
+#opening { padding-top:103px; padding-bottom:143px; }
+#open_day { padding-bottom:24px; }
+#description { padding-bottom:12px; }
+#dontmissit {  }
+
+.js #content.teaser p { display:none; } 
+
+/*----------------------------------------
+body
+------------------------------------------*/
+body { background:#f9f8f4 url(../images/bg_body.png) repeat-x top left; }
+#ie6 body { background-image:url(../images/bg_body.gif); }
+
+/*----------------------------------------
+header
+------------------------------------------*/
+header { height:29px; padding:11px 0 10px 0; }
+header #siteLogo a, header #siteLogo span { width:236px; padding-top:27px; background-image:url(../images/logo.gif); }
+header #siteCopy { margin-top:9px; }
+header #header_util { margin-top:10px; }
+
+/*----------------------------------------
+content
+------------------------------------------*/
+#content { min-height:630px; margin-top:51px; }
+#content.teaser { min-height:755px; text-align:center; }
+#ie6 #content.teaser { height:755px; }
+
+/* main */
+#content #main { width:594px; float:right; }
+
+#content #main .fl a:hover, 
+#content #main .fr a:hover { text-decoration:none; }
+
+#content #main div.fl, #content #main div.fr { position:relative; width:284px; min-height:91px; margin-bottom:30px; }
+
+#content #main div.fl a , #content #main div.fr a { *position:relative; display:block; *width:284px; min-height:91px; z-index:50; }
+
+.iphone #content #main div.fl, .iphone #content #main div.fr,
+.ipad #content #main div.fl, .ipad #content #main div.fr { min-height:125px; }
+
+.mac.webkit #content #main div.fl, .mac.webkit #content #main div.fr { min-height:95px; }
+
+.win.gecko #content #main div.fl, .win.gecko #content #main div.fr { min-height:98px; }
+
+.mac.webkit #content #main div.fr.report { min-height:105px; }
+
+#content #main div.fl-img { position:relative; float:left; width:75px; height:91px; overflow:hidden; margin-right:15px;
+  -webkit-box-shadow: 0px 0px 3px 0px #d1d1d1;
+  -moz-box-shadow: 0px 0px 3px 0px #d1d1d1;
+  box-shadow: 0px 0px 3px 0px #d1d1d1;
+  behavior:url(/common/js/PIE.htc); }
+
+#content #main div.fl-img img { position:absolute; top:-91px; cursor:pointer; }
+
+.iphone #content #main div.fl-img img,
+.ipad #content #main div.fl-img img { top:0; }
+
+.iphone #content #main div.fl-img,
+.ipad #content #main div.fl-img { margin-bottom:20px; }
+
+.iphone #content #main div.report .fl-img, .ipad #content #main div.report .fl-img { margin-bottom:80px; }
+
+#content #main div.fl a h2, #content #main div.fr a h2 { margin-bottom:10px; padding-left:102px; background:url(../../common/images/bt_arrow_black.png) no-repeat 90px 4px; _background-image:url(../../common/images/bt_arrow_black.gif); font-size:15px; color:#333; }
+.mac #content #main div.fl a h2, .mac #content #main div.fr a h2 { margin-bottom:6px; }
+.ie #content #main div.fl a h2, .ie #content #main div.fr a h2 { font-size:125%; }
+.iphone #content #main div.fl a h2, .iphone #content #main div.fr a h2,
+.ipad #content #main div.fl a h2, .ipad #content #main div.fr a h2 { background-position:90px 8px; }
+
+#content #main div.fl a:hover h2, #content #main div.fr a:hover h2 { background-image:url(../../common/images/bt_arrow_grey_hover.png); color:#666; text-decoration:underline; }
+#ie6 #content #main div.fl a:hover h2, #ie6 #content #main div.fr a:hover h2 { background-image:url(../../common/images/bt_arrow_grey_hover_bgy.gif); }
+
+
+#content #main div.fl p, #content #main div.fr p {
+color:#666;
+font-family:"ＭＳ Ｐゴシック","MS P Gothic","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+font-size:11px;
+}
+.ie #content #main div.fl p, .ie #content #main div.fr p { font-size:font-size:93%; }
+
+#content #main div.fl .hot , #content #main div.fr .hot { position:absolute; left:49px; top:-15px; }
+#content #main div.fl h3, #content #main div.fr h3 { position:absolute; left:90px; bottom:0; }
+
+.iphone #content #main div.fl h3, .iphone #content #main div.fr h3,
+.ipad #content #main div.fl h3, .ipad #content #main div.fr h3 { position:static; margin-top:12px; }
+
+/* sub */
+#content #sub { position:relative; width:236px; float:left; padding-bottom:50px; }
+#content #sub #rotatearea { position:relative; width:236px; height:286px; margin-bottom:18px; background-color:#dedede;
+-webkit-box-shadow: 0px 0px 3px 0px #ccc;
+  -moz-box-shadow: 0px 0px 3px 0px #ccc;
+  box-shadow: 0px 0px 3px 0px #ccc; }
+#content #sub #rotate-hover { position:relative; width:236px; height:286px; overflow:hidden; z-index:1000; margin-bottom:18px; background-color:#dedede;
+-webkit-box-shadow: 0px 0px 3px 0px #ccc;
+  -moz-box-shadow: 0px 0px 3px 0px #ccc;
+  box-shadow: 0px 0px 3px 0px #ccc; }
+#ie9 #content #sub #rotatearea, #ie9 #content #sub #rotate-hover { behavior:url(/common/js/PIE.htc); }
+  
+/*
+#ie6 #content #sub #rotatearea { top:-2px; left:-2px; }
+*/
+#rotatearea h2, #rotate-hover h2 { position:absolute; }
+#rotatearea h2 a, #rotate-hover h2 span { width:236px; padding-top:286px; background-image:url(../images/bt_rotatearea.jpg); }
+/*
+#ie6 #rotatearea h2 { margin-top:2px; margin-left:2px; }
+*/
+
+#rotatearea h2#rotate-contest a, #rotate-hover h2#rotate-contest-hover span { background-position:0 0; }
+#rotatearea h2#rotate-contest a:hover { background-position:0 -286px; }
+
+#rotatearea h2#rotate-relativity a, #rotate-hover h2#rotate-relativity-hover span { background-position:-236px 0; }
+#rotatearea h2#rotate-relativity a:hover { background-position:-236px -286px; }
+
+#rotatearea h2#rotate-graffiti a, #rotate-hover h2#rotate-graffiti-hover span { background-position:-472px 0; }
+#rotatearea h2#rotate-graffiti a:hover { background-position:-472px -286px; }
+
+#rotatearea h2#rotate-report a, #rotate-hover h2#rotate-report-hover span { background-position:-708px 0; }
+#rotatearea h2#rotate-report a:hover { background-position:-708px -286px; }
+
+#rotatearea h2#rotate-checker a, #rotate-hover h2#rotate-checker-hover span { background-position:-944px 0; }
+#rotatearea h2#rotate-checker a:hover { background-position:-944px -286px; }
+
+#rotatearea h2#rotate-gallery a, #rotate-hover h2#rotate-gallery-hover span { background-position:-1180px 0; }
+#rotatearea h2#rotate-gallery a:hover { background-position:-1180px -286px; }
+
+#rotatearea h2#rotate-reader a, #rotate-hover h2#rotate-reader-hover span { background-position:-1416px 0; }
+#rotatearea h2#rotate-reader a:hover { background-position:-1416px -286px; }
+
+/*
+#content #sub #swaparea { position:relative; width:236px; height:286px; margin-bottom:18px; background-color:#dedede; }
+#swaparea h2 { position:absolute; }
+
+#swaparea h2 { position:absolute; left:20px; top:66px; }
+#swaparea img.swapimage { position:absolute; left:0; bottom:0; }
+#ie6 #swaparea img.swapimage { bottom:-2px; left:2px; }
+*/
+
+#content #sub ul { margin-bottom:18px; _margin-bottom:6px; }
+
+#content #sub li#sub-about a { width:236px; padding-top:43px; background-image:url(../images/bt_about.gif); margin-top:15px; _margin-top:3px; }
+#content #sub li#sub-about a:hover { background-position:0 -43px; }
+
+#content #sub li#sub-enq a { width:236px; padding-top:123px; background-image:url(../images/bt_enq.gif); margin-top:18px; _margin-top:6px; }
+#content #sub li#sub-enq a:hover { background-position:0 -123px; }
+
+#content #sub li#sub-info a { width:236px; padding-top:70px; background-image:url(../../info/images/bn_info01.gif); }
+#content #sub li#sub-info a:hover { background-position:0 -70px; }
+
+#content #sub #update { padding-top:18px; padding-bottom:8px; border-top:1px solid #cccbc8; border-bottom:1px solid #cccbc8; }
+.mac #content #sub #update { padding-bottom:4px; }
+#content #sub #update h2 { margin-bottom:15px; }
+.mac #content #sub #update h2 { margin-bottom:12px; }
+#content #sub #update li { margin-bottom:10px; color:#666; font-family:"ＭＳ Ｐゴシック","MS P Gothic","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka,sans-serif; font-size:11px; }
+
+#content #sub #update li p.date { margin-bottom:4px; }
+
+#content #sub p#rssTxt { margin-top:13px; line-height:1.4; }
+#content #sub p#rssTxt span { padding-left:6px; }
+#content #sub p#rssTxt img { vertical-align:top; }
+#content #sub p#rssTxt img { /margin-top:-3px; }
+
+/*----------------------------------------
+footer
+------------------------------------------*/
+footer ul.relatedlinks { position:absolute; right:0; top:-45px; }
+footer ul.relatedlinks li { float:left; margin-left:20px; }
+footer ul.relatedlinks li.exlink a { padding-left:14px; background:url(../../common/images/icon_blank.gif) no-repeat 0 4px; }
+.ie footer ul.relatedlinks li.exlink a { background-position:0 3px; }
