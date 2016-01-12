@@ -1,3 +1,4 @@
+//http://svn.inet.oro.co.jp/sacr/Crystal_Corporation/index.html
 $(function(){
             $("#marquee1").marquee({
                loop: -1
