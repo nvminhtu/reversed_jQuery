@@ -165,17 +165,17 @@ a.next:hover {
 	position: absolute;
 	left: 50%;
 	top: 0;
-	width: 1555px;
+	width: 100%;
 	margin-left: -950px;
 }
 #parallax-bg1 {
 	z-index: 1;
 }
 #parallax-bg2 {
-	z-index: 2;
+	z-index: 3;
 }
 #parallax-bg3 {
-	z-index: 3;
+	z-index: 2;
 }
 #parallax-bg4 {
 	z-index: 4;
