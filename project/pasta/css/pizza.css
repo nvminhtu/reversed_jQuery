@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+#contents h1 {
+  margin: 1px 0 21px;
+}
+
+#contents h2 {
+  margin-bottom: 20px;
+}
+
+#pizza_oishi .bg_top {
+  background: url(../images/pizza/bg-top.png) no-repeat left top;
+  padding-top: 30px;
+}
+
+#pizza_oishi .bg_bottom {
+  background: url(../images/pizza/bg-bottom.png) no-repeat left bottom;
+  padding-bottom: 30px;
+}
+
+#pizza_oishi .bg_middle {
+  background: url(../images/pizza/bg-middle.png) repeat-y left top;
+}
+
+#pizza_oishi .pizza_title {
+  text-align: center;
+  padding: 10px 0 16px;
+}
+
+#pizza01,
+#pizza02,
+#pizza03,
+#pizza04 {
+  text-align: center;
+  position: relative;
+}
+
+#pizza05 {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+#pizza01 .btn_foodnote,
+#pizza03 .btn_foodnote,
+#pizza05 .btn_foodnote {
+  position: absolute;
+  right: 77px;
+  bottom: 69px;
+}
+
+#pizza01 .btn_puronline,
+#pizza03 .btn_puronline,
+#pizza05 .btn_puronline {
+  position: absolute;
+  right: 77px;
+  bottom: 22px;
+}
+
+#pizza02 .btn_foodnote,
+#pizza04 .btn_foodnote {
+  position: absolute;
+  left: 80px;
+  bottom: 69px;
+}
+
+#pizza02 .btn_puronline,
+#pizza04 .btn_puronline {
+  position: absolute;
+  left: 80px;
+  bottom: 22px;
+}
+
+#pizza01 p {
+  background: #ffcd4f;
+}
+
+#pizza02 p {
+  background: #b0d562;
+}
+
+#pizza03 p {
+  background: #99d3ec;
+}
+
+#pizza04 p {
+  background: #ffa5ae;
+}
+
+#pizza05 p {
+  background: #ffaa77;
+}
+
+#area_note {
+  overflow: hidden;
+  padding: 50px 40px 16px;
+}
+
+#area_note .btn_note {
+  float: left;
+  width: 398px;
+}
+
+#area_note .txt_note {
+  float: right;
+  width: 440px;
+  padding: 20px 20px 20px 27px;
+  background: url(../images/pizza/bg-area_note.gif) repeat-y left top;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#area_note .txt_note span {
+  font-size: 134%;
+  color: #522c12;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#area_note .txt_note ol {
+  list-style-type: none;
+  text-indent: -12px;
+  margin-left: 12px;
+  color: #522c12;
+}
+
+#area_note:after {
+  content: "."; visibility: hidden; display: block; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}

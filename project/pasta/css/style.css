@@ -1,0 +1,856 @@
+@charset "utf-8";
+html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}
+
+/* ---------------------------------------------------------------- *
+File name: style.css
+ * ---------------------------------------------------------------- */
+body {
+	background: url(../images/bg-wrap.gif) left top repeat;
+	font-size: 76%;
+	line-height: 1.6;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+}
+#header_wrap{
+	width:100%;
+	background: #ffffff;
+	padding-bottom:10px;
+}
+#header {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+#header:after {
+	content: "."; visibility: hidden; display: block; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}
+#header .logo {
+	float: left;
+	width: 92px;
+	padding: 9px 0 0 3px !important;
+}
+#header .btn_sp {
+	float: right;
+	width: 887px;
+	margin-right: 10px;
+  display: none;
+}
+#contents {
+	margin: 0 auto;
+	width: 1000px;
+	min-width: 1000px;
+}
+#contents h1{
+	margin-bottom:30px;
+}
+#contents ul.beside{
+	overflow:hidden;
+}
+#contents ul.beside li{
+	float:left;
+}
+#contents ul.beside li.last{
+	float:right;
+	margin-right:0 !important
+}
+#contents ul#resipes_ancer{
+	margin-bottom:16px;
+}
+#contents ul#resipes_ancer li{
+	margin-right:10px;
+}
+#contents #other_wrap{
+	width: 1000px;
+	background: url(../images/bg-service_bnr.gif) top left no-repeat;
+	padding:11px 0;
+}
+#contents .bnr_foodnote{
+  margin: -20px 0 39px;
+}
+#contents ul#other_ancer{
+	width:580px;
+	margin:auto;
+	margin-bottom:40px;
+}
+#contents ul#other_ancer li{
+	margin-right:20px;
+}
+#contents .recipe_block{
+	margin-bottom:58px;
+}
+
+.pt3{padding-top:3px !important;}
+.pt5{padding-top:5px !important;}
+.pt10{padding-top:10px !important;}
+.pt15{padding-top:15px !important;}
+.pt17{padding-top:17px !important;}
+.pt20{padding-top:20px !important;}
+.pt25{padding-top:25px !important;}
+.pb17{padding-bottom:17px !important;}
+
+
+/*  .sub_title
+----------------------------------------*/
+ul.sub_title{
+	overflow:hidden;
+	clear:both;
+}
+ul.sub_title li{
+	float:left;
+}
+ul.sub_slada{}
+ul.sub_slada li{
+	margin-right:9px;
+}
+ul.sub_slada li.s_salada07{
+	margin-right:0 !important;
+	float:right;
+}
+
+ul.sub_pasta{}
+
+ul.sub_pasta li{
+	margin-right:10px;
+}
+ul.sub_pasta li.s_pasta07{
+	margin-right:0 !important;
+}
+ul.sub_chef{}
+
+ul.sub_chef li{
+	margin-right:9px;
+}
+ul.sub_chef li.s_chef07{
+	margin-right:0 !important;
+	float:right;
+}
+
+ul.sub_wine{}
+
+ul.sub_wine li{
+	margin-right:10px;
+}
+ul.sub_wine li.s_wine06{
+	margin-right:0 !important;
+}
+
+
+/*  #salad_block
+----------------------------------------*/
+#salad_block{}
+
+#salad_block .recipe_box dl.recipe_title dt{
+	background-image: url(../images/salad/ico-salad.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left:75px;
+	width:385px;
+	height:65px;
+}
+ #salad_block .swiper-container,#salad_block .swiper-slide {
+	width: 1000px;
+	height: 590px;
+
+}
+ #salad_block .recipe_box{
+	 height:570px;
+	 background:#fff;
+} 
+ #salad_block .recipe_box dl.recipe_title{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+ #salad_block .wine_detail{
+	 padding-top:16px;
+}
+
+/*  #pasta_block
+----------------------------------------*/
+#pasta_block{}
+
+#pasta_block .recipe_box dl.recipe_title dt{
+	background-image: url(../images/pasta/ico-pasta.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left:78px;
+	width:380px;
+	height:65px;
+}
+
+ #pasta_block .swiper-container,#salad_block .swiper-slide {
+	width: 1000px;
+	height: 600px;
+}
+#pasta_block .recipe_box{
+	 height:580px;
+	 background:#fff;
+} 
+#pasta_block .recipe_box dl.recipe_title{
+	overflow:hidden;
+	margin-bottom:28px;
+}
+#pasta_block .wine_detail{
+	 padding-top:19px;
+}
+
+/*  #chef_block
+----------------------------------------*/
+#chef_block{
+	position:relative;
+}
+#chef_block h2{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+}
+#chef_block .recipe_box dl.recipe_title{
+	margin:56px 0 0 0 !important;
+	padding-top:5px;
+	overflow:hidden;
+}
+#chef_block .recipe_box dl.recipe_title dt{
+	background-image: url(../images/chef/ico-chef.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding-left:100px;
+	width:370px;
+	height:95px;
+	padding-top:20px;
+	margin-left:10px !important;
+}
+#chef_block .recipe_box dl.recipe_title dd{
+	padding-top:20px;
+}
+ #chef_block .swiper-container,#salad_block .swiper-slide {
+	width: 1000px;
+	height: 885px;
+}
+#chef_block .recipe_box{
+	 height:790px;
+	 background:#fff;
+	 margin-top:20px;
+} 
+#chef_block .recipe_box dl{
+	padding-top:0 !important;
+}
+#chef_block .recipe_box dl.recipe_title{
+	overflow:hidden;
+	margin-bottom:28px;
+}
+#chef_block #mario_box{
+	position:absolute;
+	top:660px;
+	left:0;
+	background:#fff;
+	overflow:hidden;
+	width:1000px;
+	height:206px;
+	z-index:100;
+}
+#chef_block #mario_box .mario_detail_box{
+	width: 770px;
+	height:180px;
+	background-image: url(../images/chef/bg-mario.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	margin:auto;
+}
+#chef_block ul.mario_profile{
+	margin:0 30px 0 20px;
+	overflow:hidden;
+}
+#chef_block ul.mario_profile li{
+	float:left;
+}
+#chef_block ul.mario_profile li.txt_mario{
+	width:550px;
+	margin-right:30px;
+}
+#chef_block ul.mario_profile li.txt_mario p.mario_title{
+	margin-bottom:20px;
+}
+#chef_block ul.mario_profile li.txt_mario .mario{
+	background-image: url(../images/chef/ico-mario.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left:63px;
+}
+#chef_block ul.mario_profile li.txt_mario .mario p{
+	margin-bottom:20px;
+	font-size:14px;
+	color:#522c12;
+}
+#chef_block ul.mario_profile li.pho_mario{
+	width:140px;
+	margin-top:15px;
+}
+#chef_block .recipe_box .pickup_wine .pickup_bot .pickup_y{
+	padding:0 20px 0 22px !important;
+}
+#chef_block .wine_detail{
+	 padding-top:18px;
+}
+#chef_block .w_material206{
+	width:206px !important;
+}
+.no_source{
+	padding-bottom:0 !important;
+	margin-bottom:0 !important;
+	border:none !important;
+}
+.top_cho{ padding-top: 24px;}
+.pb5{	padding-bottom:5px !important;}
+.pb6{	padding-bottom:6px !important;}
+
+/*  #wine_block
+----------------------------------------*/
+#wine_block{}
+
+#wine_block .recipe_box .wine_title{
+	background-image: url(../images/wine/ico-wine.gif);
+	background-repeat: no-repeat;
+	background-position: 20px 11px;
+	height: 60px;
+	padding:11px 0 0 95px;
+}
+#wine_block .recipe_box .wine_photo{
+	width:234px;
+	float:left;
+	margin-right:32px;
+}
+#wine_block .recipe_box ul.osusume_wine{
+	width:701px;
+	float:left;
+	overflow:hidden;
+	margin-bottom:17px;
+	padding-top:18px;
+}
+#wine_block .recipe_box ul.osusume_wine li{
+	float:left;
+	margin-right:18px;
+}
+#wine_block .recipe_box ul.osusume_wine li.last{
+	margin-right:0 !important;
+}
+#wine_block .recipe_box .wine_netsuper{
+	text-align:right;
+	margin-right:20px;
+}
+#wine_block .recipe_box ul.osusume_wine_l{
+	width:950px;
+	margin:0 auto 17px;
+	overflow:hidden;
+	padding-top:30px;
+}
+#wine_block .recipe_box ul.osusume_wine_l li{
+	float:left;
+	margin-right:17px;
+}
+#wine_block .recipe_box ul.osusume_wine_l li.last{
+	margin-right:0 !important;
+}
+#wine_block .swiper-container,#wine_block .swiper-slide {
+	width: 1000px;
+	height: 400px;
+}
+#wine_block .recipe_box{
+	 height:378px;
+	 background:#fff;
+} 
+#wine_block .recipe_box dl.recipe_title{
+	overflow:hidden;
+	margin-bottom:28px;
+}
+
+/*  .recipe_box 共通
+----------------------------------------*/
+.swiper-container, .swiper-slide {
+	width: 1000px;
+	height: 200px;
+}
+.slide_box{
+	background:#fff;
+	overflow:hidden;
+	padding-bottom:25px;
+}
+.recipe_box{
+	width:1000px;
+}
+.recipe_box dl.recipe_title dt{
+	float: left;
+	margin-left:20px;
+}
+.recipe_box dl.recipe_title dd{
+	float:left;
+	width:520px;
+}
+.recipe_box .recipe_photo{
+	position:relative;
+	float:left;
+	width:330px;
+	height:456px;
+	display:block;
+	margin-right:24px;
+}
+.recipe_box .recipe_photo .recipe_photo_link{
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.recipe_box .recipe_detail{
+	position: relative;
+	width: 370px;
+	height: 456px;
+	float: left;
+	overflow: hidden;
+}
+.recipe_box .recipe_detail .cooking_time{
+	margin-bottom:15px;
+}
+.recipe_box .recipe_detail p.material{
+	margin-bottom:10px;
+}
+.recipe_box .recipe_detail .recipe_list{
+	width:355px;
+}
+.recipe_box .recipe_detail .recipe_list ul.recipe_wrap{
+	width:355px !important;
+}
+.recipe_box .recipe_detail .recipe_list ul{
+	float:left;
+	width:173px;
+}
+.recipe_box .recipe_detail .recipe_list ul li{
+	clear:both;
+	color:#522c12;
+	border-bottom:dashed 1px #522c12;
+	padding-bottom:3px;
+	margin-bottom:3px;
+}
+.recipe_box .recipe_detail .recipe_list ul li.non_bd{
+	border-bottom:none !important;
+	padding-bottom:4px !important;
+}
+.recipe_box .recipe_detail .recipe_list ul li.arrage{
+	padding-bottom:10px !important;
+}
+.recipe_box .recipe_detail .recipe_list ul.recipe_left{
+	margin-right:9px;
+}
+
+.recipe_box .recipe_detail .sarad_space{
+	position:absolute;
+	bottom:52px;
+	left:42px;
+}
+.recipe_box .recipe_detail .pasta_space{
+	position:absolute;
+	bottom:75px;
+	left:25px;
+}
+.recipe_box .recipe_detail .net_shop_01{
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.recipe_box .pickup_wine{
+	position:relative;
+	width:260px;
+	height:456px;
+	float:left;
+	display:block;
+}
+.recipe_box .pickup_wine p.pickup_title{
+	padding:0;
+	margin:0;
+}
+.recipe_box .pickup_wine .pickup_bot{
+	background-image: url(../images/bg-wine_wrap_bot.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	width: 240px;
+	margin:auto;
+	padding-bottom:22px;
+}
+.recipe_box .pickup_wine .pickup_bot .pickup_y{
+	width: 198px;
+	background-image: url(../images/bg-wine_wrap_y.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+	padding:5px 20px 0 22px;
+}
+.recipe_box .pickup_wine .pickup_bot .pickup_y .wine_name{
+	margin-bottom:13px;
+}
+.recipe_box .pickup_wine .pickup_bot .pickup_y ul.wine_detail_box{
+	overflow:hidden;
+}
+.recipe_box .pickup_wine .pickup_bot .pickup_y ul.wine_detail_box li.wine_photo{
+	float:left;
+}
+.recipe_box .pickup_wine .pickup_bot .pickup_y ul.wine_detail_box li.wine_come{
+	float:right;
+}
+.recipe_box .pickup_wine .pickup_bot .pickup_y ul.wine_detail_box li .wine_detail{
+	margin-bottom:15px;
+}
+.recipe_box dl.wine_price{
+	color:#522c12;
+}
+.recipe_box dl.wine_price dt{
+	font-size:15px;
+}
+.recipe_box dl.wine_price dd{
+	font-size: 12px;
+	text-align: left;
+}
+.recipe_box .pickup_wine .net_shop_02{
+	position:absolute;
+	bottom:0;
+	left:20px;
+	text-align:left;
+}
+
+/*  #organic_box
+----------------------------------------*/
+#organic_box{
+	position: relative;
+	background-image: url(../images/bg-organic.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 1000px;
+	height: 770px;
+	display:block;
+	margin-bottom:30px;
+}
+#organic_box dl.organic_title{
+	padding:30px 0 0 40px;
+	margin-bottom:77px;
+	overflow:hidden;
+}
+#organic_box dl.organic_title dt{
+	float:left;
+	margin-right:40px;
+}
+#organic_box dl.organic_title dd{
+	float:left;
+}
+#organic_box p.itaorganic{
+	position:absolute;
+	top:214px;
+	left:41px;
+}
+#organic_box ul.organic_item{
+	clear:both;
+	margin-left:30px;
+}
+#organic_box ul.organic_item li{
+	float:left;
+	margin-right:20px;
+	padding-top:12px;
+	width:218px;
+}
+#organic_box ul.organic_item li.or_last{
+	margin-left:5px;
+	padding-top:0 !important;
+}
+#organic_box ul.organic_item li .or_photo{
+	margin-bottom:16px;
+}
+#organic_box ul.organic_item li.or_last .or_photo{
+	margin-bottom:28px;
+}
+#organic_box ul.organic_item li dl.or_price{
+	color:#522c12;
+	margin-left:30px;
+}
+#organic_box ul.organic_item li dl.or_price dt{
+	font-size:15px;
+}
+#organic_box .or_link{
+	position:absolute;
+	bottom:26px;
+	right:40px;
+}
+
+/*  #store_box
+----------------------------------------*/
+#store_box{
+	width: 998px;
+	background-image: url(../images/bg-stores.png);
+	background-repeat: repeat;
+	background-position: left top;
+	margin-bottom:50px;
+}
+#store_box dl.store{
+	padding:19px 29px;
+	border:2px solid #fff;
+}
+#store_box dl.store dt{
+	margin-bottom:16px;
+}
+#store_box dl.store dd{
+	color:#522c12;
+	font-size:14px;
+}
+
+/*  #foodnote_box
+----------------------------------------*/
+#foodnote_box{
+	background-image: url(../images/bg-foodnote.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height:863px;
+	margin-bottom:55px;
+}
+#foodnote_box dl.foodnote_title{
+	padding:52px 0 34px 61px !important;
+	overflow:hidden;
+}
+#foodnote_box dl.foodnote_title dt{
+	float:left;
+	margin-right:31px;
+}
+#foodnote_box dl.foodnote_title dd{
+	float:left;
+	margin-top:49px;
+}
+#foodnote_box #foodnote_backnumber{
+	width:880px;
+	margin:auto;
+}
+#foodnote_box .food_list{
+	overflow:hidden;
+	float:left;
+	width:440px;
+}
+#foodnote_box .food_list dl.f_list{
+	overflow:hidden;
+	margin-bottom:40px;
+}
+#foodnote_box .food_list dl.f_list dt{
+	width:100px;
+	float:left;
+	margin-right:20px;
+	text-align:center;
+}
+#foodnote_box .food_list dl.f_list dd{
+	width:320px;
+	float:left;
+}
+#foodnote_box .food_list dl.f_list dd ul.backnumber{
+	clear:both;
+}
+#foodnote_box .food_list dl.f_list dd ul.backnumber li a{
+	color:#522c12;
+	font-size:14px;
+}
+
+/*  #beef_box
+----------------------------------------*/
+#beef_box{
+	background-image: url(../images/bg-beef.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	width:1000px;
+	height:602px;
+	position:relative;
+	display:block;
+}
+#beef_box div{
+	position:absolute;
+	display:block;
+}
+#beef_box .beef_icon{
+	top:16px;
+	left:50px;
+}
+#beef_box .beef_title01{
+	top:59px;
+	left:246px;
+}
+#beef_box .beef_txt01{
+	top:129px;
+	left:353px;
+}
+#beef_box .beef_photo{
+	top:173px;
+	left:20px;
+}
+#beef_box .beef_title02{
+	top:316px;
+	left:353px;
+}
+#beef_box .beef_txt02{
+	bottom:161px;
+	right:156px;
+}
+#beef_box .beef_link{
+	bottom:30px;
+	right:40px;
+}
+#beef_box .beef_detail{
+	bottom:23px;
+	left:178px;
+}
+
+/*  .page_top
+----------------------------------------*/
+.page_top {
+	width:　1000px;
+	text-align: right;
+	margin: 0px auto;
+	padding-top: 59px;
+}
+
+/*  フッター
+----------------------------------------*/
+#footer {
+	background: #efefef;
+	width: 100%;
+}
+#footer .inner {
+	width: 1000px;
+	margin: 0 auto;
+}
+#footer_nav {
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0 50px 0;
+}
+#footer_nav ul {
+	width: 100%;
+}
+#footer_nav ul:after {
+	content: "."; display: block; visibility: hidden; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}
+#footer_nav ul li {
+	float: left;
+	margin-right: 10px;
+}
+#footer_nav ul li.copy_right {
+	margin-right: 27px;
+}
+#footer_nav ul li.environment {
+	float: right;
+	margin-right: 0;
+}
+
+/*  お近くの店舗をお選びください
+----------------------------------------*/
+#province {
+	position: fixed;
+	bottom: 0px;
+	width: 620px;
+	left: 50%;
+	margin-left: -120px;
+	z-index:500;
+}
+#province a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70) !important;
+	-ms-filter: "alpha(opacity=70)";
+}
+#province .province_area .inner {
+	display: none;
+	padding: 28px 52px;
+	background: #ffffff;
+	border: 2px solid #6e362c;
+}
+#province .province_area .inner h2 span {
+	font-size: 192%;
+	margin-left: 3px;
+	line-height: 1.4;
+	display: block;
+}
+#province .province_area .inner h2 span.member {
+	border-bottom: 2px solid #d1d1d1;
+	padding-bottom: 6px;
+	margin-bottom: 33px;
+}
+#province .province_area .inner h2 span.small {
+	font-size: 100%;
+}
+#province .province_area .inner h2 a {
+	color: #6d362c;
+}
+#province .province_area .inner h2 a:hover {
+	text-decoration: none;
+}
+#province .province_area .inner ul.province_item {
+	margin-top: 33px;
+}
+#province .province_area .inner ul.province_item dl {
+	width: 514px;
+	border-bottom: 1px dotted #babbbb;
+	padding-bottom: 7px;
+	margin-bottom: 9px;
+}
+#province .province_area .inner ul.province_item dl.last {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+#province .province_area .inner ul.province_item li dl:after {
+	content:"."; display: block; visibility: hidden; height: 0.1px;font-size: 0.1em; line-height: 0; clear: both;
+}
+#province .province_area .inner ul.province_item li dl dt {
+	width: 120px;
+	float: left;
+	color: #6d362c;
+	font-size: 117%;
+	margin-left: 2px;
+}
+#province .province_area .inner ul.province_item li dl dd {
+	padding-left: 115px;
+}
+#province .province_area .inner ul.province_item li dl ul:after {
+	content:"."; display: block; visibility: hidden; height: 0.1px;font-size: 0.1em; line-height: 0; clear: both;
+}
+#province .province_area .inner ul.province_item li dl dd ul {
+	width: 399px;
+}
+#province .province_area .inner ul.province_item li dl dd ul li {
+	float: left;
+	color: #595757;
+}
+#province .province_area .inner ul.province_item li dl dd ul li a {
+	color: #595757;
+	font-size: 117%;
+}
+#province .province_area .inner ul.province_item li dl dd ul li a:hover {
+	text-decoration: none;
+}
+#shopList {
+  float: right;
+  background: #fff;
+}
+
+/*  sns
+----------------------------------------*/
+
+.sns {
+  float:left;
+	width: 355px;
+	padding-top: 20px;
+  
+  clear: both;
+}
+.sns:after {
+	content:".";display:block;visibility:hidden;height:0.1px;font-size:0.1em;line-height:0;clear:both;
+}
+.sns li{
+	float: left;
+}
+.sns li.mixi {
+	padding-right: 2px;
+	padding-left: 6px;
+}
+.sns li.twitter {
+	padding-right: 4px;
+}
+.sns li.gogatsu_ningyo {
+	padding-left: 12px;
+}
+

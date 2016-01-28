@@ -1,0 +1,343 @@
+/* Scss Document */
+
+// カラーセット
+$base_color: #522c12;
+$second_color: #d0ba75;
+$img_border_color: #f2ebd7;
+
+// サイズセット
+$contents_width: 960px;
+
+// ミックスイン
+@mixin clear_fix {
+  content:".";display:block;visibility:hidden;height:0.1px;font-size:0.1em;line-height:0;clear:both;
+}
+@mixin table_cell {
+  display: table-cell;
+  vertical-align: middle;
+  *zoom: 1;
+  *display: inline;
+}
+
+
+
+/*----------------------------------------
+  #contents
+----------------------------------------*/
+#contents {
+
+/*  ローカル
+----------------------------------------*/
+text-align: left;
+
+h1 {
+  margin: 1px auto 21px auto;
+}
+
+a {
+  color: $base_color;
+  
+  &:hover {
+    color: #938279;
+  }
+}
+
+ol li {
+  list-style: none;
+}
+
+/*  .recipe
+----------------------------------------*/
+.recipe {
+  background: #fff;
+  color: $base_color;
+  
+  .recipe_detail {
+    float: left;
+    width: 431px;
+    padding: 13px 0 40px 20px;
+    
+    .photo_chef {
+      float: left;
+      padding-right: 14px;
+    }
+    
+    .copy {
+      clear: both;
+      padding-top: 24px;
+      *padding-top: 12px;
+      font-size: 109%;
+    }
+    
+    .material {
+      clear: both;
+      
+      span {
+        float: right;
+        *margin-top: -2em;
+      }
+      
+      table {
+        width: 100%;
+        
+      }
+      
+      th {
+        font-weight: normal;
+        padding-right: 10px;
+      }
+      
+      td {
+        text-align: right;
+        vertical-align: top;
+        white-space: nowrap;
+      }
+      
+      .left {
+        float: left;
+      }
+      
+      .right {
+        float: right;
+      }
+      
+      .sauce dd {
+        background: #e8e9dc;
+        padding: 3px;
+      }
+      
+      .sauce dd p {
+        *width: 83px;
+      }
+      
+      .photo_sauce {
+        @include table_cell;
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        text-align: center;
+        
+        img {
+          *margin-top: 10px;
+        }
+      }
+      
+      p {
+        @include table_cell;
+        padding: 10px;
+      }
+      
+      dl {
+        width: 209px;
+      }
+      
+      dt {
+        padding: 5px 0;
+      }
+      
+      li {
+        border-bottom: 1px dashed $base_color;
+        padding: 5px 0;
+      }
+      
+      ul {
+        border-top: 1px dashed $base_color;
+      }
+    }
+    
+    h3 {
+      padding-top: 12px;
+    }
+    
+    h4 {
+      border-bottom: 2px solid $base_color;
+      padding: 23px 0 0 0;
+      margin-bottom: 10px;
+      font-size: 134%;
+    }
+    
+    .buy {
+      clear: both;
+      padding-top: 30px;
+      text-align: center;
+    }
+  }
+  
+  .recipe_image {
+    float: right;
+    padding-bottom: 40px;
+  }
+  
+  .making {
+    clear: both;
+    margin: 0 20px;
+    border: 1px solid $second_color;
+    padding: 20px 30px 30px 30px;
+    background: url(../images/bg-making.png) no-repeat 840px 15px;
+    font-size: 117%;
+    width: $contents_width - 2 - 60;
+    
+    .making_inner:after {
+      @include clear_fix;
+    }
+    
+    h4 {
+      padding-bottom: 25px;
+    }
+    
+    ol:after {
+      @include clear_fix;
+    }
+    
+    @for $i from 0 through 7 {
+      @if $i == 0 {
+        // chef-01
+        &.chef_01 {
+          @for $i from 0 through 7 {  
+            .step#{$i + 1} {
+              background: url(../images/ico-step#{$i + 1}.png) no-repeat top left;
+            }
+          }
+          
+          li {
+            min-height: 34px - 8px;
+            padding: 8px 0 10px 46px;
+            
+            &.step7 {
+              padding-bottom: 0;
+            }
+          }
+          
+          ol {
+            float: left;
+          }
+          
+          .making_image {
+            float: right;
+            
+            img {
+              border: 10px solid $img_border_color;
+            }
+          }
+        }
+      } @else {
+        // chef-02～
+        &.chef_0#{$i + 1} {
+          @for $i from 0 through 4 {  
+            .step#{$i + 1} {
+              width: 430px;
+              @if $i < 2 {
+                padding-bottom: 40px;
+              }
+              
+              @if $i % 2 == 0 {
+                clear: both;
+                float: left;
+              } @else {
+                float: right;
+              }
+              
+              dt {
+                @include table_cell;
+                height: 44px;
+                line-height: 44px;
+                layout-grid-line: 44px; // IE7
+                padding-left: 50px;
+                background: url(../images/ico-step#{$i + 1}.png) no-repeat left center;
+                margin-bottom: 10px;
+              }
+              
+              .making_image {
+                padding: 10px 0;
+                
+                img {
+                  border: 10px solid $img_border_color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*  .recipe_footer
+----------------------------------------*/
+.recipe_footer {
+  background: #fff;
+  line-height: 200%;
+  color: $base_color;
+    
+  .back {
+    padding: 30px 20px;
+    text-align: right;
+  }
+  
+  .other_recipe {
+    background: #f3ede4;
+    margin: 0 20px;
+    padding-bottom: 20px;
+    font-size: 117%;
+    width: $contents_width;
+    
+    h3 {
+      padding-bottom: 10px;
+    }
+    
+    li {
+      float: left;
+      width: 480px - 20 - 60;
+      padding: 10px 20px 0 60px;
+      min-height: 14px;
+      background: url(../images/ico-arrow.png) no-repeat 42px 18px;
+    }
+    
+    ul:after {
+      @include clear_fix;
+    }
+    
+    .current {
+      display: none;
+    }
+  }
+  
+  .info {
+    padding: 30px 20px 85px 20px;
+    width: $contents_width;
+    
+    &:after {
+      @include clear_fix;
+    }
+    
+    h3 {
+      padding-bottom: 24px;
+    }
+    
+    .profile {
+      float: left;
+      width: 660px;
+      
+      .photo_chef {
+        float: left;
+        padding-right: 22px;
+      }
+    }
+    
+    .shop {
+      float: right;
+      width: 260px;
+      
+      .open_time {
+        border: 1px solid $second_color;
+        padding: 12px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/*----------------------------------------
+  / #contents
+----------------------------------------*/
+}
