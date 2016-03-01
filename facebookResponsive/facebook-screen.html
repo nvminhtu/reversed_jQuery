@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+<style>
+  #fb-root {
+  display: none;
+}
+</style>
+<div id="container" style="width:100%;">
+  <div class="fb-like-box" data-href="https://www.facebook.com/adobegocreate" data-width="292" data-show-faces="true" data-stream="true" data-header="true"></div>
+</div>
+
+<div id="fb-root"></div>
+<script>
+/*
+ * REMEMBER TO CHANGE TO YOUR APP ID AND CHANGE data-href TO SUIT YOU
+ */
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=ADD YOUR APP ID HERE";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+$(window).bind("load resize", function(){    
+  var container_width = $('#container').width();    
+    $('#container').html('<div class="fb-like-box" ' + 
+    'data-href="https://www.facebook.com/MUFANCLUB/"' +
+    ' data-width="' + container_width + '" data-height="730" data-show-faces="false" ' +
+    'data-stream="true" data-header="true"></div>');
+    FB.XFBML.parse( );    
+}); 
+</script>
+
+
+
+</body>
+</html>
