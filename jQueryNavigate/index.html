@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+      $(window).on("navigate", function (event, data) {
+      var direction = data.state.direction;
+      if (direction == 'back') {
+        // do something
+      }
+      if (direction == 'forward') {
+        // do something else
+      }
+    });
+  </script>
+</body>
+</html>
