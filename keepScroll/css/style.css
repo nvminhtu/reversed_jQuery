@@ -1,0 +1,18 @@
+body {
+  margin: 50px;
+  text-align: center;
+}
+body form {
+  margin: 0px auto 0;
+  width: 200px;
+}
+
+.content {
+  background: #ddd;
+}
+.content_2 {
+  background: #eee;
+}
+.content_3 {
+  background: #4792a7;
+}

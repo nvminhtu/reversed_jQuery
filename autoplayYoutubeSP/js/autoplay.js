@@ -1,11 +1,13 @@
 ;(function($) {
   
   "use strict";
-  
+    
   $(function(){
     // $('.thumb_video').css({
     //   display: 'none'
     // });
+    console.log($("body").height());
+
     $('.introVid a').off().click(function(){
       event.preventDefault();
       autoPlayVideo('o6NstKZMr94','450','283');
