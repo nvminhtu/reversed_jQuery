@@ -28,13 +28,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="highlighter/prettify.js"></script>
   <script type="text/javascript">
-    $.preloadImages = function () {
-      for (var i = 0; i < arguments.length; i++) {
-        $('<img>').attr('src', arguments[i]);
-      }
-    };
-
-    $.preloadImages('img/badger.png', 'img/bear.png');
+    $('img').load(function(){
+      console.log('image load successfully');
+    });
   </script>
 </body>
 </html>

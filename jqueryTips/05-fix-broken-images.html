@@ -9,14 +9,11 @@
 <body>
   <div class="container">
     <div class="header">
-      This script help us make a button - then click - it will go to the top of page
+      This script help us fix broken images when they are not in a right address.
     <!-- /.header --></div>
     <div class="contents">
-      <p>At times you may want the submit button of a form or one of its text inputs to be disabled until the user has performed a certain action (e.g., checking the "I've read the terms" checkbox). Add the disabled attribute to your input so you can enable it when you want.</p>
       <img src="img/badger.png" height="512" width="512" alt="">
-      <pre class="prettyprint">
-        
-      </pre>
+      <img src="img/badger2.png" height="512" width="512" alt="">
     <!-- /.contents --></div>
     <div class="footer">
       <div class="backtop">
@@ -28,13 +25,17 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="highlighter/prettify.js"></script>
   <script type="text/javascript">
-    $.preloadImages = function () {
-      for (var i = 0; i < arguments.length; i++) {
-        $('<img>').attr('src', arguments[i]);
-      }
-    };
-
-    $.preloadImages('img/badger.png', 'img/bear.png');
+    // $('img').on('error',function(){
+    //   if(!$(this).hasClass('broken')){
+    //     $(this).attr('src','img/broken.jpg').addClass('broken');
+    //   }
+    // });
+    
+    $(document).ready(function(){
+       $('img').error(function() {
+          $(this).attr( "src", "img/broken.jpg" );
+      });
+    });
   </script>
 </body>
 </html>
