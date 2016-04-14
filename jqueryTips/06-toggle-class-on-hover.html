@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Customer List</title>
+  <title>Toggle class on Hover</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="highlighter/dessert.css" />
 </head>
@@ -12,8 +12,12 @@
       This script help us fix broken images when they are not in a right address.
     <!-- /.header --></div>
     <div class="contents">
-      <img src="img/badger.png" height="512" width="512" alt="">
-      <img src="img/badger2.png" height="512" width="512" alt="">
+      <a href="#" class="btn">
+        Toggle this
+      <!-- /.btn --></a>
+      <div class="btn_content">
+        content here
+      <!-- /.btn_content --></div>
     <!-- /.contents --></div>
     <div class="footer">
       <div class="backtop">
@@ -25,11 +29,18 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="highlighter/prettify.js"></script>
   <script type="text/javascript">
-    // Fix broken images automatically
-    $('img').on('error', function () {
-      if(!$(this).hasClass('broken-image')) {
-        $(this).prop('src', 'img/broken.png').addClass('broken-image');
-      }
+    /*$(document).ready(function(){
+      $('.btn').hover(function(){
+        $(this).addClass('hover');
+      },function(){
+        $(this).removeClass('hover');
+      });
+    }); */
+  
+    $(document).ready(function(){
+      $('.btn').hover(function(){
+        $(this).toggleClass('hover');
+      });
     });
   </script>
 </body>
